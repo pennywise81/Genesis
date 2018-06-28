@@ -165,3 +165,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/**
+ * Load Advanced Custom Fields compatibility file.
+ */
+require get_template_directory() . '/inc/advancedcustomfields.php';
