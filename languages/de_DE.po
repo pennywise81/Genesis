@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-28 09:05+0000\n"
-"PO-Revision-Date: 2018-06-28 09:17+0000\n"
+"PO-Revision-Date: 2018-06-28 09:31+0000\n"
 "Last-Translator: Lars <lars.schweisthal@gmail.com>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -40,20 +40,20 @@ msgstr ""
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s Kommentar zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 
 #. %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:39
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "<span class=\"screen-reader-text\">\"%s\" </span>weiterlesen"
 
 #. %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:99 template-parts/content-page.php:37
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr ""
+msgstr "<span class=\"screen-reader-text\">%s </span>Bearbeiten"
 
 #. Name of the theme
 msgid "Genesis"
@@ -102,6 +102,7 @@ msgstr ""
 #, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
+"Einen Kommentar hinterlassen<span class=\"screen-reader-text\"> zu %s</span>"
 
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:69
@@ -121,7 +122,7 @@ msgstr "Nichts gefunden"
 #: comments.php:35
 #, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr ""
+msgstr "Ein Kommentar zu &ldquo;%1$s&rdquo;"
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
@@ -136,28 +137,28 @@ msgstr ""
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr ""
+msgstr "von %s"
 
 #. %s: post date.
 #: inc/template-tags.php:29
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
-msgstr ""
+msgstr "Veröffentlicht am %s"
 
 #. 1: list of categories.
 #: inc/template-tags.php:65
 #, php-format
 msgid "Posted in %1$s"
-msgstr ""
+msgstr "Veröffentlicht in %1$s"
 
 #: functions.php:47
 msgid "Primary"
-msgstr ""
+msgstr "Platzierung des Hauptmenüs"
 
 #: header.php:48
 msgid "Primary Menu"
-msgstr ""
+msgstr "Hauptmenü"
 
 #. %s: CMS name, i.e. WordPress.
 #: footer.php:21
