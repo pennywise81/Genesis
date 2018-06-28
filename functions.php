@@ -170,3 +170,8 @@ if ( class_exists( 'WooCommerce' ) ) {
  * Load Advanced Custom Fields compatibility file.
  */
 require get_template_directory() . '/inc/advancedcustomfields.php';
+
+/**
+ * Load theme switch setup file
+ */
+require get_template_directory() . '/inc/theme-switch.php';
