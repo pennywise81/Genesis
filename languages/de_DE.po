@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 09:05+0000\n"
-"PO-Revision-Date: 2018-06-28 09:31+0000\n"
+"POT-Creation-Date: 2018-06-28 11:00+0000\n"
+"PO-Revision-Date: 2018-06-28 11:01+0000\n"
 "Last-Translator: Lars <lars.schweisthal@gmail.com>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -13,26 +13,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/"
 
-#. number of items in the mini cart.
-#: inc/woocommerce.php:231
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oh nein! Die Seite kann nicht gefunden werden."
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"An dieser Stelle wurde nichts gefunden. Vielleicht wählst du einen der Links "
+"unterhalb oder eine Volltextsuche."
+
+#: 404.php:31
+msgid "Most Used Categories"
+msgstr "Häufigste Kategorien"
+
+#. %1$s: smiley
+#: 404.php:47
 #, php-format
-msgid "%d item"
-msgid_plural "%d items"
-msgstr[0] ""
-msgstr[1] ""
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Versuche es im Monatsarchiv. %1$s"
 
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:62
-msgid ", "
-msgstr ""
-
-#: functions.php:110
-msgid "Add widgets here."
-msgstr ""
-
-#: comments.php:66
-msgid "Comments are closed."
-msgstr ""
+#. 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Ein Kommentar zu &ldquo;%1$s&rdquo;"
 
 #. 1: comment count number, 2: title.
 #: comments.php:41
@@ -43,17 +50,163 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "%1$s Kommentar zu &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 
-#. %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:39
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. %s: CMS name, i.e. WordPress.
+#: footer.php:21
 #, php-format
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "<span class=\"screen-reader-text\">\"%s\" </span>weiterlesen"
+msgid "Proudly powered by %s"
+msgstr "Voller Stolz präsentiert von %s"
+
+#. 1: Theme name, 2: Theme author.
+#: footer.php:27
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s von %2$s."
+
+#: functions.php:47
+msgid "Primary"
+msgstr "Platzierung des Hauptmenüs"
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:110
+msgid "Add widgets here."
+msgstr ""
+
+#: header.php:25
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:48
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#. %s: search query.
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/advancedcustomfields.php:18
+#, php-format
+msgid ""
+"Please install and activate the plugin <em><a href=\"%1$s\" class=\"thickbox "
+"open-plugin-details-modal\">%2$s</a></em>."
+msgstr ""
+"Bitte installiere und aktiviere das Plugin <em><a href=\"%1$s\" "
+"class=\"thickbox open-plugin-details-modal\">%2$s</a></em>."
+
+#: inc/advancedcustomfields.php:20
+msgid "Advanced Custom Fields"
+msgstr "Eigene Felder"
+
+#. %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Veröffentlicht am %s"
+
+#. %s: post author.
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "von %s"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:65
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Veröffentlicht in %1$s"
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:69
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:72
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"Einen Kommentar hinterlassen<span class=\"screen-reader-text\"> zu %s</span>"
 
 #. %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:99 template-parts/content-page.php:37
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s </span>Bearbeiten"
+
+#: inc/woocommerce.php:227
+msgid "View your shopping cart"
+msgstr ""
+
+#. number of items in the mini cart.
+#: inc/woocommerce.php:231
+#, php-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Starte "
+"hier</a>."
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldige, aber nichts wurde zu deinem Suchbegriff gefunden. Versuche es "
+"noch einmal mit anderen Schlüsselwörtern."
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content.php:50
+msgid "Pages:"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:39
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "<span class=\"screen-reader-text\">\"%s\" </span>weiterlesen"
 
 #. Name of the theme
 msgid "Genesis"
@@ -75,146 +228,6 @@ msgstr ""
 msgid "http://larsschweisthal.de/"
 msgstr ""
 
-#: footer.php:18
-msgid "https://wordpress.org/"
-msgstr ""
-
-#: 404.php:22
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-"An dieser Stelle wurde nichts gefunden. Vielleicht wählst du einen der Links "
-"unterhalb oder eine Volltextsuche."
-
-#: template-parts/content-none.php:44
-msgid ""
-"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
-"searching can help."
-msgstr ""
-
 #. Author of the theme
 msgid "Lars Schweisthal"
-msgstr ""
-
-#. %s: post title
-#: inc/template-tags.php:82
-#, php-format
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-"Einen Kommentar hinterlassen<span class=\"screen-reader-text\"> zu %s</span>"
-
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:69
-msgctxt "list item separator"
-msgid ", "
-msgstr ""
-
-#: 404.php:31
-msgid "Most Used Categories"
-msgstr "Häufigste Kategorien"
-
-#: template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr "Nichts gefunden"
-
-#. 1: title.
-#: comments.php:35
-#, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
-msgstr "Ein Kommentar zu &ldquo;%1$s&rdquo;"
-
-#: 404.php:18
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oh nein! Die Seite kann nicht gefunden werden."
-
-#: template-parts/content-page.php:24 template-parts/content.php:50
-msgid "Pages:"
-msgstr ""
-
-#. %s: post author.
-#: inc/template-tags.php:45
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr "von %s"
-
-#. %s: post date.
-#: inc/template-tags.php:29
-#, php-format
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "Veröffentlicht am %s"
-
-#. 1: list of categories.
-#: inc/template-tags.php:65
-#, php-format
-msgid "Posted in %1$s"
-msgstr "Veröffentlicht in %1$s"
-
-#: functions.php:47
-msgid "Primary"
-msgstr "Platzierung des Hauptmenüs"
-
-#: header.php:48
-msgid "Primary Menu"
-msgstr "Hauptmenü"
-
-#. %s: CMS name, i.e. WordPress.
-#: footer.php:21
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "Voller Stolz präsentiert von %s"
-
-#. 1: link to WP admin new post page.
-#: template-parts/content-none.php:24
-#, php-format
-msgid ""
-"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr ""
-"Bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Starte "
-"hier</a>."
-
-#. %s: search query.
-#: search.php:22
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
-#: functions.php:108
-msgid "Sidebar"
-msgstr ""
-
-#: header.php:25
-msgid "Skip to content"
-msgstr ""
-
-#: template-parts/content-none.php:37
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr ""
-"Entschuldige, aber nichts wurde zu deinem Suchbegriff gefunden. Versuche es "
-"noch einmal mit anderen Schlüsselwörtern."
-
-#. 1: list of tags.
-#: inc/template-tags.php:72
-#, php-format
-msgid "Tagged %1$s"
-msgstr ""
-
-#. 1: Theme name, 2: Theme author.
-#: footer.php:27
-#, php-format
-msgid "Theme: %1$s by %2$s."
-msgstr "Theme: %1$s von %2$s."
-
-#. %1$s: smiley
-#: 404.php:47
-#, php-format
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Versuche es im Monatsarchiv. %1$s"
-
-#: inc/woocommerce.php:227
-msgid "View your shopping cart"
 msgstr ""
