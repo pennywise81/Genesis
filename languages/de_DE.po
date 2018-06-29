@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 11:00+0000\n"
-"PO-Revision-Date: 2018-06-28 11:01+0000\n"
+"POT-Creation-Date: 2018-06-29 18:14+0000\n"
+"PO-Revision-Date: 2018-06-29 18:15+0000\n"
 "Last-Translator: Lars <lars.schweisthal@gmail.com>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -158,6 +158,10 @@ msgstr ""
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s </span>Bearbeiten"
+
+#: inc/theme-switch.php:48
+msgid "Image has been added to media library."
+msgstr "Bild wurde zur Medienbibliothek hinzugefügt."
 
 #: inc/woocommerce.php:227
 msgid "View your shopping cart"
