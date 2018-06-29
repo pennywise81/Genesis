@@ -45,16 +45,10 @@ add_action('after_switch_theme', function() {
         // create admin notice
         add_action('admin_notices', function () {
           echo '<div class="notice notice-info is-dismissible"><p>';
-          echo "Image has been added to media library.";
+          esc_html_e('Image has been added to media library.', 'genesis');
           echo '</p></div>';
         });
       }
-      else {
-        // couldn't upload image
-      }
-    }
-    else {
-      // couldn't upload image
     }
   }
 });
