@@ -24,29 +24,43 @@
   <div class="site">
     <header class="site-header">
 
-      <!--
-      <div class="site-branding">
+      <div class="container-fluid site-branding">
         <?php
-
-        if (is_front_page() && is_home()) {
-          ?>
-          <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
-          <?php
-        }
-        else {
-          ?>
-          <p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-          <?php
-        }
 
         $genesis_description = get_bloginfo('description', 'display');
 
-        if ($genesis_description || is_customize_preview()) {
+        if (is_front_page() && is_home()) {
+
           ?>
-          <p class="site-description"><?php echo $genesis_description; /* WPCS: xss ok. */ ?></p>
-        <?php } ?>
+
+          <h1 class="display-1">
+            <?php bloginfo('name'); ?>
+          </h1>
+
+          <?php
+
+          if ($genesis_description || is_customize_preview()) {
+
+          ?>
+          <p class="lead">
+            <?php echo $genesis_description; ?>
+          </p>
+          <?php
+
+          }
+
+          ?>
+
+        <?php
+
+        }
+
+        /*
+        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"></a>
+        */
+
+        ?>
       </div>
-      -->
 
       <?php get_template_part('template-parts/navbar'); ?>
 
