@@ -28,8 +28,6 @@
       <div class="site-branding">
         <?php
 
-        the_custom_logo();
-
         if (is_front_page() && is_home()) {
           ?>
           <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
@@ -40,7 +38,9 @@
           <p class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
           <?php
         }
+
         $genesis_description = get_bloginfo('description', 'display');
+
         if ($genesis_description || is_customize_preview()) {
           ?>
           <p class="site-description"><?php echo $genesis_description; /* WPCS: xss ok. */ ?></p>
@@ -48,17 +48,7 @@
       </div>
       -->
 
-      <!--
-      <nav id="site-navigation" class="main-navigation">
-        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'genesis'); ?></button>
-        <?php
-        wp_nav_menu(array(
-          'theme_location' => 'menu-1',
-          'menu_id'        => 'primary-menu',
-        ));
-        ?>
-      </nav>
-      -->
+      <?php get_template_part('template-parts/navbar'); ?>
 
     </header><!-- .site-header -->
 
