@@ -33,8 +33,8 @@
 
           ?>
 
-          <h1 class="display-1">
-            <?php bloginfo('name'); ?>
+          <h1 class="display-1 site-title">
+            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a>
           </h1>
 
           <?php
@@ -42,7 +42,7 @@
           if ($genesis_description || is_customize_preview()) {
 
           ?>
-          <p class="lead">
+          <p class="lead site-description">
             <?php echo $genesis_description; ?>
           </p>
           <?php

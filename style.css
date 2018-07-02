@@ -119,3 +119,11 @@ Description: Genesis is a theme based on <a href="http://underscores.me/"><code>
 .gallery-caption {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# HTML fix for background image
+--------------------------------------------------------------*/
+
+html {
+	height: 100%;
+}

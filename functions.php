@@ -182,3 +182,8 @@ require get_template_directory() . '/inc/theme-switch.php';
  * Bootstrap Menu walker
  */
 require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+
+/**
+ * Extending the customizer colors
+ */
+require get_template_directory() . '/inc/customizer-colors.php';
