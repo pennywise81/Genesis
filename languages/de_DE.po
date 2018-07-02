@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-29 18:14+0000\n"
-"PO-Revision-Date: 2018-07-02 09:59+0000\n"
+"PO-Revision-Date: 2018-07-02 11:36+0000\n"
 "Last-Translator: Lars <lars.schweisthal@gmail.com>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -157,7 +157,7 @@ msgstr ""
 #: inc/template-tags.php:99 template-parts/content-page.php:37
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "<span class=\"screen-reader-text\">%s </span>Bearbeiten"
+msgstr "<span class=\"screen-reader-text\">%s </span>bearbeiten"
 
 #: inc/theme-switch.php:48
 msgid "Image has been added to media library."
