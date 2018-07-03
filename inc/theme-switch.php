@@ -10,7 +10,9 @@
 /**
  * Adds file(s) to media library after the theme has been switched to
  */
-add_action('after_switch_theme', function() {
+add_action('after_switch_theme', 'genesis_after_switch_theme');
+
+function genesis_after_switch_theme() {
   global $wpdb;
 
   $files = array(
@@ -76,4 +78,4 @@ add_action('after_switch_theme', function() {
     }
   }
 
-});
+};
