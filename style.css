@@ -123,7 +123,28 @@ Description: Genesis is a theme based on <a href="http://underscores.me/"><code>
 /*--------------------------------------------------------------
 # HTML fix for background image
 --------------------------------------------------------------*/
-
 html {
 	height: 100%;
 }
+
+/*--------------------------------------------------------------
+# BOOTSTRAP GRID ADDITIONS START
+--------------------------------------------------------------*/
+.container--maxwidth--900 {
+  max-width: 900px;
+}
+
+.container--maxwidth--1024 {
+  max-width: 1024px;
+}
+
+.container--maxwidth--1200 {
+  max-width: 1200px;
+}
+
+.container--no-padding {
+  padding: 0;
+}
+/*--------------------------------------------------------------
+# BOOTSTRAP GRID ADDITIONS END
+--------------------------------------------------------------*/
