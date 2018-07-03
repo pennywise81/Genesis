@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 18:14+0000\n"
-"PO-Revision-Date: 2018-07-02 11:36+0000\n"
+"POT-Creation-Date: 2018-07-03 09:03+0000\n"
+"PO-Revision-Date: 2018-07-03 09:04+0000\n"
 "Last-Translator: Lars <lars.schweisthal@gmail.com>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -54,18 +54,18 @@ msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:18
+#: footer.php:20
 msgid "https://wordpress.org/"
 msgstr ""
 
 #. %s: CMS name, i.e. WordPress.
-#: footer.php:21
+#: footer.php:23
 #, php-format
 msgid "Proudly powered by %s"
 msgstr "Voller Stolz präsentiert von %s"
 
 #. 1: Theme name, 2: Theme author.
-#: footer.php:27
+#: footer.php:29
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr "Theme: %1$s von %2$s."
@@ -81,14 +81,6 @@ msgstr ""
 #: functions.php:110
 msgid "Add widgets here."
 msgstr ""
-
-#: header.php:25
-msgid "Skip to content"
-msgstr ""
-
-#: header.php:48
-msgid "Primary Menu"
-msgstr "Hauptmenü"
 
 #. %s: search query.
 #: search.php:22
@@ -108,6 +100,14 @@ msgstr ""
 #: inc/advancedcustomfields.php:20
 msgid "Advanced Custom Fields"
 msgstr "Eigene Felder"
+
+#: inc/customizer-colors.php:24
+msgid "Body Text Color"
+msgstr ""
+
+#: inc/customizer-colors.php:43
+msgid "Body Link Color"
+msgstr ""
 
 #. %s: post date.
 #: inc/template-tags.php:29
@@ -159,9 +159,10 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s </span>bearbeiten"
 
-#: inc/theme-switch.php:48
-msgid "Image has been added to media library."
-msgstr "Bild wurde zur Medienbibliothek hinzugefügt."
+#: inc/theme-switch.php:71
+#, php-format
+msgid "Image %1$s has been added to media library."
+msgstr "Bild %1$s wurde zur Medienbibliothek hinzugefügt."
 
 #: inc/woocommerce.php:227
 msgid "View your shopping cart"
@@ -175,12 +176,12 @@ msgid_plural "%d items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: template-parts/content-none.php:14
+#: template-parts/content-none.php:15
 msgid "Nothing Found"
 msgstr "Nichts gefunden"
 
 #. 1: link to WP admin new post page.
-#: template-parts/content-none.php:24
+#: template-parts/content-none.php:25
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
@@ -188,7 +189,7 @@ msgstr ""
 "Bereit deinen ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Starte "
 "hier</a>."
 
-#: template-parts/content-none.php:37
+#: template-parts/content-none.php:38
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
@@ -196,7 +197,7 @@ msgstr ""
 "Entschuldige, aber nichts wurde zu deinem Suchbegriff gefunden. Versuche es "
 "noch einmal mit anderen Schlüsselwörtern."
 
-#: template-parts/content-none.php:44
+#: template-parts/content-none.php:45
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
@@ -204,15 +205,19 @@ msgstr ""
 "Es scheint als könnten die gewünschten Inhalte nicht gefunden werden. "
 "Vielleicht kann eine Suche helfen."
 
-#: template-parts/content-page.php:24 template-parts/content.php:50
+#: template-parts/content-page.php:25 template-parts/content.php:51
 msgid "Pages:"
 msgstr ""
 
 #. %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:39
+#: template-parts/content.php:40
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" </span>weiterlesen"
+
+#: template-parts/navbar.php:10
+msgid "Primary Menu"
+msgstr "Hauptmenü"
 
 #. Name of the theme
 msgid "Genesis"
