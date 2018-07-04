@@ -1,7 +1,7 @@
 ## Open todos
 
 * ~~Customizing navbar logo; enable live update~~
-* change Fontawesome loading to smaller option
+* ~~change Fontawesome loading to smaller option~~
 * Seperate the navbar toggle to an own partial
 * Customizing of navbar color
 * Customizing the header image; set a default; enable live update
