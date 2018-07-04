@@ -62,8 +62,9 @@
         ?>
       </div>
 
-      <?php get_template_part('template-parts/navbar'); ?>
 
     </header><!-- .site-header -->
+
+    <?php get_template_part('template-parts/navbar'); ?>
 
     <main class="site-content">

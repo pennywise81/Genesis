@@ -5,7 +5,8 @@
     'menu_id' => 'primary-menu',
     'depth' => 2,
     'container' => 'div',
-    'container_class' => 'collapse navbar-collapse justify-content-end',
+    // 'container_class' => 'collapse navbar-collapse justify-content-end', // for right aligned menu
+    'container_class' => 'collapse navbar-collapse',
     'container_id' => 'site-primary-menu',
     'menu_class' => 'nav navbar-nav',
     'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
