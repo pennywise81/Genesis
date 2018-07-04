@@ -142,6 +142,8 @@ html {
   max-width: 1200px;
 }
 
+.container.container--no-padding,
+.container-fluid.container--no-padding,
 .container--no-padding {
   padding: 0;
 }
