@@ -209,3 +209,19 @@ html {
 /*--------------------------------------------------------------
 # NAVBAR TOGGLER END
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# HEADER IMAGE START
+--------------------------------------------------------------*/
+.header-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.header-image  img {
+  flex: none;
+  width: 100%;
+}

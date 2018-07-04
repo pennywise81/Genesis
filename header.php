@@ -24,7 +24,7 @@
   <div class="site">
     <header class="site-header">
 
-      <div class="container-fluid site-branding">
+      <div class="container-fluid container--no-padding site-branding">
         <?php
 
         $genesis_description = get_bloginfo('description', 'display');
@@ -55,11 +55,27 @@
 
         }
 
-        /*
-        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"></a>
-        */
+        ?>
+
+        <?php
+
+        $headerbild = get_header_image();
+        $headerbild = function_exists('get_field') ? get_field('headerbild') : $headerbild;
+
+        if ($headerbild !== false) {
+          ?>
+            <div class="row no-gutters">
+              <div class="col">
+                <div class="header-image">
+                  <img src="<?php echo $headerbild; ?>" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          <?php
+        }
 
         ?>
+
       </div>
 
 
