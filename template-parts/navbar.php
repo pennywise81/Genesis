@@ -2,12 +2,7 @@
 
   <div class="container">
 
-    <button class="navbar-toggler"
-      type="button" data-toggle="collapse" data-target="#site-primary-menu"
-      aria-controls="site-primary-menu" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <?php get_template_part('template-parts/partials/navbar', 'toggler'); ?>
 
     <?php
 

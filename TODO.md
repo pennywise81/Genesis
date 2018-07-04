@@ -2,7 +2,7 @@
 
 * ~~Customizing navbar logo; enable live update~~
 * ~~change Fontawesome loading to smaller option~~
-* Seperate the navbar toggle to an own partial
+* ~~Seperate the navbar toggle to an own partial~~
 * Customizing of navbar color
 * Customizing the header image; set a default; enable live update
 * Customizing the background image; set a default; enable live update

@@ -180,3 +180,32 @@ html {
 /*--------------------------------------------------------------
 # FIXED FOOTER END
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# NAVBAR TOGGLER START
+--------------------------------------------------------------*/
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: none;
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: 900;
+  outline: none;
+}
+
+.navbar-toggler:before {
+  content: "\f00d"; /* "Times" */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+
+.navbar-toggler.collapsed {}
+
+.navbar-toggler.collapsed:before {
+  content: "\f0c9"; /* "Bars" */
+}
+/*--------------------------------------------------------------
+# NAVBAR TOGGLER END
+--------------------------------------------------------------*/
