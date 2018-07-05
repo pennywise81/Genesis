@@ -79,3 +79,62 @@ function genesis_upload_images() {
 };
 
 add_action('after_switch_theme', 'genesis_upload_images');
+
+/**
+ * Adds a HTML widget to the footer
+ */
+/*
+function genesis_footer_add_widget() {
+  $active_widgets = get_option('sidebars_widgets');
+
+  if (empty($active_widgets['footer-widgets-1'])) {
+    $active_widgets['footer-widgets-1'][] = 'custom_html-0';
+
+    $theme = wp_get_theme();
+
+    $themeAuthorURI = $theme->get('AuthorURI') != '' ? esc_html($theme->get('AuthorURI')) : '';
+    $themeAuthor = $theme->get('Author') != '' ? esc_html($theme->get('Author')) : '';
+    $themeName = $theme->get('Name') != '' ? esc_html($theme->get('Name')) : '';
+    $themeURI = $theme->get('ThemeURI') != '' ? esc_html($theme->get('ThemeURI')) : '';
+
+    $themeAuthorString = '';
+    $themeString = '';
+
+    if ($themeAuthorURI != '' && $themeAuthor != '') {
+      $themeAuthorString = "<a href=\"$themeAuthorURI\">$themeAuthor</a>";
+    }
+    elseif ($themeAuthor != '') {
+      $themeAuthorString = $themeAuthor;
+    }
+
+    if ($themeURI != '') {
+      $themeString = "<a href=\"$themeURI\">$themeName</a>";
+    }
+    else {
+      $themeString = $themeName;
+    }
+
+    ?>
+    <section class="widget site-info">
+      <a href="<?php echo esc_url(__('https://wordpress.org/', 'genesis')); ?>">
+        <?php printf(esc_html__('Proudly powered by %s', 'genesis'), 'WordPress'); ?>
+      </a>
+      <span class="sep"> | </span>
+      <?php printf(esc_html__('Theme: %1$s by %2$s.', 'genesis'), $themeString, $themeAuthorString); ?>
+    </section>
+
+    <?php
+
+    $text_content[0] = array (
+      'title' => 'Hallo',
+      'content' => 'Hans <b>Meiser</b>',
+    );
+
+    update_option('widget_custom_html', $text_content);
+    update_option('sidebars_widgets', $active_widgets);
+  }
+}
+
+// add_action('after_switch_theme', 'genesis_footer_add_widget');
+add_action('after_setup_theme', 'genesis_footer_add_widget');
+*/
