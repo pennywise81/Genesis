@@ -15,12 +15,6 @@ function genesis_upload_images() {
 
   $files = array(
     array(
-      'file' => 'genesis-page-background.jpg',
-      'title' => 'Lake under heavy rain',
-      'excerpt' => 'Photo by <a href="https://unsplash.com/photos/z6Quzi5HXV0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Bean</a> on <a href="/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>',
-      'content' => 'Photo by Jonathan Bean on Unsplash',
-    ),
-    array(
       'file' => 'genesis-page-background-2.jpg',
       'title' => 'Blue mountain silhouettes',
       'excerpt' => 'Photo by <a href="https://unsplash.com/photos/MDgRcuGYu58?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">bady qb</a> on <a href="/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>',
@@ -78,12 +72,11 @@ function genesis_upload_images() {
 
 };
 
-add_action('after_switch_theme', 'genesis_upload_images');
+// add_action('after_switch_theme', 'genesis_upload_images');
 
 /**
  * Adds a HTML widget to the footer
  */
-/*
 function genesis_footer_add_widget() {
   $active_widgets = get_option('sidebars_widgets');
 
@@ -114,20 +107,18 @@ function genesis_footer_add_widget() {
       $themeString = $themeName;
     }
 
-    ?>
-    <section class="widget site-info">
-      <a href="<?php echo esc_url(__('https://wordpress.org/', 'genesis')); ?>">
-        <?php printf(esc_html__('Proudly powered by %s', 'genesis'), 'WordPress'); ?>
-      </a>
-      <span class="sep"> | </span>
-      <?php printf(esc_html__('Theme: %1$s by %2$s.', 'genesis'), $themeString, $themeAuthorString); ?>
-    </section>
+    $footer_content = '';
 
-    <?php
+    $footer_content .= '<section class="widget site-info">';
+    $footer_content .= '  <a href="' . esc_url(__('https://wordpress.org/', 'genesis')) . '">';
+    $footer_content .= '    ' . sprintf(esc_html__('Proudly powered by %s', 'genesis'), 'WordPress');
+    $footer_content .= '  </a>';
+    $footer_content .= '  <span class="sep"> | </span>';
+    $footer_content .= '  ' . sprintf(esc_html__('Theme: %1$s by %2$s.', 'genesis'), $themeString, $themeAuthorString);
+    $footer_content .= '</section>';
 
     $text_content[0] = array (
-      'title' => 'Hallo',
-      'content' => 'Hans <b>Meiser</b>',
+      'content' => $footer_content,
     );
 
     update_option('widget_custom_html', $text_content);
@@ -135,6 +126,4 @@ function genesis_footer_add_widget() {
   }
 }
 
-// add_action('after_switch_theme', 'genesis_footer_add_widget');
-add_action('after_setup_theme', 'genesis_footer_add_widget');
-*/
+add_action('after_switch_theme', 'genesis_footer_add_widget');
