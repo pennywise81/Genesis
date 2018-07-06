@@ -25,6 +25,8 @@
         ?>
       </div>
 
+      <?php get_template_part('template-parts/partials/footer', 'additional_content'); ?>
+
     </footer><!-- .footer -->
   </div><!-- .site -->
 
