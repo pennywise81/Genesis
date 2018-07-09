@@ -173,11 +173,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 require get_template_directory() . '/inc/advancedcustomfields.php';
 
 /**
- * Load theme switch setup file
- */
-require get_template_directory() . '/inc/theme-switch.php';
-
-/**
  * Bootstrap Menu walker
  */
 require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
