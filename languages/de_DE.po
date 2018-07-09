@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-03 09:03+0000\n"
-"PO-Revision-Date: 2018-07-03 09:04+0000\n"
+"POT-Creation-Date: 2018-07-09 11:14+0000\n"
+"PO-Revision-Date: 2018-07-09 11:17+0000\n"
 "Last-Translator: Lars <lars.schweisthal@gmail.com>\n"
 "Language-Team: Deutsch\n"
 "Language: de_DE\n"
@@ -52,20 +52,20 @@ msgstr[1] "%1$s Kommentare zu &ldquo;%2$s&rdquo;"
 
 #: comments.php:66
 msgid "Comments are closed."
-msgstr ""
+msgstr "Kommentare sind geschlossen."
 
-#: footer.php:20
+#: footer.php:26
 msgid "https://wordpress.org/"
-msgstr ""
+msgstr "https://de.wordpress.org/"
 
 #. %s: CMS name, i.e. WordPress.
-#: footer.php:23
+#: footer.php:27
 #, php-format
 msgid "Proudly powered by %s"
 msgstr "Voller Stolz präsentiert von %s"
 
 #. 1: Theme name, 2: Theme author.
-#: footer.php:29
+#: footer.php:30
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr "Theme: %1$s von %2$s."
@@ -74,19 +74,23 @@ msgstr "Theme: %1$s von %2$s."
 msgid "Primary"
 msgstr "Platzierung des Hauptmenüs"
 
-#: functions.php:108
+#: functions.php:96
 msgid "Sidebar"
-msgstr ""
+msgstr "Seitenleiste"
 
-#: functions.php:110
+#: functions.php:98 functions.php:108
 msgid "Add widgets here."
-msgstr ""
+msgstr "Füge Widgets hier hinzu."
+
+#: functions.php:106
+msgid "Footer"
+msgstr "Fußzeile"
 
 #. %s: search query.
 #: search.php:22
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Suchergebnisse zu: %s"
 
 #: inc/advancedcustomfields.php:18
 #, php-format
@@ -101,13 +105,26 @@ msgstr ""
 msgid "Advanced Custom Fields"
 msgstr "Eigene Felder"
 
-#: inc/customizer-colors.php:24
-msgid "Body Text Color"
-msgstr ""
+#: inc/custom-header.php:25
+msgid "Default Header Image"
+msgstr "Standard Headerbild"
 
-#: inc/customizer-colors.php:43
+#: inc/custom-logo.php:66
+#, php-format
+msgid "Image %1$s has been added to media library."
+msgstr "Bild %1$s wurde zur Medienbibliothek hinzugefügt."
+
+#: inc/customizer-colors.php:18
+msgid "Body Text Color"
+msgstr "Body Textfarbe"
+
+#: inc/customizer-colors.php:37
 msgid "Body Link Color"
-msgstr ""
+msgstr "Body Linkfarbe"
+
+#: inc/customizer-colors.php:56
+msgid "Navbar background Color"
+msgstr "Navigation Hintergrundfarbe"
 
 #. %s: post date.
 #: inc/template-tags.php:29
@@ -126,7 +143,7 @@ msgstr "von %s"
 #. used between list items, there is a space after the comma
 #: inc/template-tags.php:62
 msgid ", "
-msgstr ""
+msgstr ","
 
 #. 1: list of categories.
 #: inc/template-tags.php:65
@@ -138,13 +155,13 @@ msgstr "Veröffentlicht in %1$s"
 #: inc/template-tags.php:69
 msgctxt "list item separator"
 msgid ", "
-msgstr ""
+msgstr ","
 
 #. 1: list of tags.
 #: inc/template-tags.php:72
 #, php-format
 msgid "Tagged %1$s"
-msgstr ""
+msgstr "Getagged in %1$s"
 
 #. %s: post title
 #: inc/template-tags.php:82
@@ -158,11 +175,6 @@ msgstr ""
 #, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s </span>bearbeiten"
-
-#: inc/theme-switch.php:71
-#, php-format
-msgid "Image %1$s has been added to media library."
-msgstr "Bild %1$s wurde zur Medienbibliothek hinzugefügt."
 
 #: inc/woocommerce.php:227
 msgid "View your shopping cart"
@@ -207,17 +219,13 @@ msgstr ""
 
 #: template-parts/content-page.php:25 template-parts/content.php:51
 msgid "Pages:"
-msgstr ""
+msgstr "Seiten:"
 
 #. %s: Name of current post. Only visible to screen readers
 #: template-parts/content.php:40
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\" </span>weiterlesen"
-
-#: template-parts/navbar.php:10
-msgid "Primary Menu"
-msgstr "Hauptmenü"
 
 #. Name of the theme
 msgid "Genesis"

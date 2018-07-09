@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Genesis\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-03 09:03+0000\n"
+"POT-Creation-Date: 2018-07-09 11:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -53,18 +53,18 @@ msgstr[1] ""
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:20
+#: footer.php:26
 msgid "https://wordpress.org/"
 msgstr ""
 
 #. %s: CMS name, i.e. WordPress.
-#: footer.php:23
+#: footer.php:27
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
 #. 1: Theme name, 2: Theme author.
-#: footer.php:29
+#: footer.php:30
 #, php-format
 msgid "Theme: %1$s by %2$s."
 msgstr ""
@@ -73,12 +73,16 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:96
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:98 functions.php:108
 msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:106
+msgid "Footer"
 msgstr ""
 
 #. %s: search query.
@@ -98,12 +102,25 @@ msgstr ""
 msgid "Advanced Custom Fields"
 msgstr ""
 
-#: inc/customizer-colors.php:24
+#: inc/custom-header.php:25
+msgid "Default Header Image"
+msgstr ""
+
+#: inc/custom-logo.php:66
+#, php-format
+msgid "Image %1$s has been added to media library."
+msgstr ""
+
+#: inc/customizer-colors.php:18
 msgid "Body Text Color"
 msgstr ""
 
-#: inc/customizer-colors.php:43
+#: inc/customizer-colors.php:37
 msgid "Body Link Color"
+msgstr ""
+
+#: inc/customizer-colors.php:56
+msgid "Navbar background Color"
 msgstr ""
 
 #. %s: post date.
@@ -155,11 +172,6 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/theme-switch.php:71
-#, php-format
-msgid "Image %1$s has been added to media library."
-msgstr ""
-
 #: inc/woocommerce.php:227
 msgid "View your shopping cart"
 msgstr ""
@@ -203,10 +215,6 @@ msgstr ""
 #: template-parts/content.php:40
 #, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
-
-#: template-parts/navbar.php:10
-msgid "Primary Menu"
 msgstr ""
 
 #. Name of the theme
