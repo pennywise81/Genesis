@@ -28,53 +28,34 @@
         <?php
 
         $genesis_description = get_bloginfo('description', 'display');
-
-        if (is_front_page() && is_home()) {
-
-          ?>
-
-          <h1 class="display-1 site-title">
-            <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-          </h1>
-
-          <?php
-
-          if ($genesis_description || is_customize_preview()) {
-
-          ?>
-          <p class="lead site-description">
-            <?php echo $genesis_description; ?>
-          </p>
-          <?php
-
-          }
-
-          ?>
-
-        <?php
-
-        }
-
-        ?>
-
-        <?php
-
         $headerbild = get_header_image();
         $headerbild = function_exists('get_field') ? get_field('headerbild') : $headerbild;
 
-        if ($headerbild !== false) {
-          ?>
-            <div class="row no-gutters">
-              <div class="col">
-                <div class="header-image">
-                  <img src="<?php echo $headerbild; ?>" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          <?php
-        }
-
         ?>
+
+        <div class="jumbotron jumbotron-fluid" <?php echo ($headerbild !== false) ?
+          ' style="background-image:url(' . $headerbild . ');"' : '' ?>>
+          <div class="container">
+            <h1 class="display-2 site-title">
+              <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                <?php bloginfo('name'); ?>
+              </a>
+            </h1>
+
+            <?php
+
+            if ($genesis_description || is_customize_preview()) {
+              ?>
+
+              <p class="lead site-description"><?php echo $genesis_description; ?></p>
+
+              <?php
+            }
+
+            ?>
+
+          </div>
+        </div>
 
       </div>
 
