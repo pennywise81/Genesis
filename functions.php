@@ -67,19 +67,6 @@ if ( ! function_exists( 'genesis_setup' ) ) :
 
     // Add theme support for selective refresh for widgets.
     add_theme_support( 'customize-selective-refresh-widgets' );
-
-    /**
-     * Add support for core custom logo.
-     *
-     * @link https://codex.wordpress.org/Theme_Logo
-     * @link https://make.wordpress.org/core/2016/03/10/custom-logo/
-     */
-    add_theme_support('custom-logo', array(
-      'height'      => 50,
-      'width'       => 185,
-      'flex-width'  => false,
-      'flex-height' => false,
-    ));
   }
 endif;
 add_action('after_setup_theme', 'genesis_setup');
@@ -199,3 +186,8 @@ require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
  * Extending the customizer colors
  */
 require get_template_directory() . '/inc/customizer-colors.php';
+
+/**
+ * Custom logo support/default
+ */
+require get_template_directory() . '/inc/custom-logo.php';
