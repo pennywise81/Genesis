@@ -94,7 +94,7 @@ add_action( 'after_setup_theme', 'genesis_content_width', 0 );
 function genesis_widgets_init() {
   register_sidebar(array(
     'name' => esc_html__('Sidebar', 'genesis'),
-    'id' => 'sidebar-1',
+    'id' => 'genesis-sidebar-1',
     'description' => esc_html__('Add widgets here.', 'genesis'),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget' => '</section>',
@@ -104,7 +104,7 @@ function genesis_widgets_init() {
 
   register_sidebar(array(
     'name' => esc_html__('Footer', 'genesis'),
-    'id' => 'footer-widgets-1',
+    'id' => 'genesis-footer-widgets-1',
     'description' => esc_html__('Add widgets here.', 'genesis'),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget' => '</section>',
@@ -186,3 +186,8 @@ require get_template_directory() . '/inc/customizer-colors.php';
  * Custom logo support/default
  */
 require get_template_directory() . '/inc/custom-logo.php';
+
+/**
+ * Adds some default widgets on theme switch
+ */
+require get_template_directory() . '/inc/default-widgets.php';
