@@ -281,13 +281,10 @@ body {
   background: #e3f2fd;
 }
 
-.site-footer .container {
-  background: blue;
-}
+.site-footer .container {}
 
 .site-footer .widget {
-  background: red;
-  margin-top: 1.5em;
+  margin: 0;
 }
 /*--------------------------------------------------------------
 # FOOTER END
