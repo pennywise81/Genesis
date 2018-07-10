@@ -159,7 +159,7 @@ if ( ! function_exists( 'genesis_woocommerce_wrapper_before' ) ) {
 	 */
 	function genesis_woocommerce_wrapper_before() {
 		?>
-		<div id="primary" class="content-area">
+		<div id="primary" class="col-sm-9 content-area">
 			<main id="main" class="site-main" role="main">
 			<?php
 	}

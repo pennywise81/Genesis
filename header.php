@@ -80,4 +80,5 @@
 
     <?php get_template_part('template-parts/navbar'); ?>
 
-    <main class="site-content">
+    <main class="site-content container">
+      <div class="row">

@@ -12,6 +12,6 @@ if (!is_active_sidebar('genesis-sidebar-1')) {
 }
 ?>
 
-<aside id="secondary" class="widget-area">
+<aside id="secondary" class="col-sm-3 widget-area">
   <?php dynamic_sidebar('genesis-sidebar-1'); ?>
 </aside><!-- #secondary -->
