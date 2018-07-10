@@ -29,7 +29,7 @@ function genesis_custom_header_setup() {
 
   add_theme_support('custom-header', apply_filters('genesis_custom_header_args', array(
     'default-image' => get_template_directory_uri() . '/img/genesis-page-header.jpg',
-    'default-text-color' => 'fff',
+    'default-text-color' => '000',
     'width' => 1000,
     'height' => 250,
     'flex-height' => false,

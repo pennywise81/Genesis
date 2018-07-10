@@ -217,27 +217,48 @@ body {
 /*--------------------------------------------------------------
 # HEADER START
 --------------------------------------------------------------*/
-/*
-.header-image {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  max-height: 250px;
-  overflow: hidden;
-}
-
-.header-image  img {
-  flex: none;
-  width: 100%;
-}
-*/
 .site-header .jumbotron {
   background-size: cover;
   margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 .site-title a {
   text-decoration: none;
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.site-info {
+  padding: 1.5rem 0;
+  top: 0;
+  width: 100%;
+}
+
+.site-header .transition-animation + .site-info {
+  position: absolute;
+}
+
+.transition-animation {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.transition-animation__image {
+  animation: zoom-out 5s ease-out forwards;
+  flex: none;
+  width: 100%;
 }
 /*--------------------------------------------------------------
 # HEADER END
@@ -260,9 +281,12 @@ body {
   background: #e3f2fd;
 }
 
-.site-footer .container {}
+.site-footer .container {
+  background: blue;
+}
 
 .site-footer .widget {
+  background: red;
   margin-top: 1.5em;
 }
 /*--------------------------------------------------------------

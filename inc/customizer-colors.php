@@ -87,6 +87,7 @@ function genesis_customizer_css() {
   $genesis_text_color = get_theme_mod('genesis_text_color', '#727272');
   $genesis_link_color = get_theme_mod('genesis_link_color', '#007bff');
   $genesis_navbar_background = get_theme_mod('genesis_navbar_background', '#e3f2fd');
+  $genesis_body_background = get_theme_mod('background_color');
 
   if ($genesis_text_color !== '') {
     $css .= '.site-content { color: ' . $genesis_text_color . '; }';
@@ -98,6 +99,10 @@ function genesis_customizer_css() {
 
   if ($genesis_navbar_background !== '') {
     $css .= '.site-navbar { background-color: ' . $genesis_navbar_background . '; }';
+  }
+
+  if ($genesis_body_background !== '') {
+    $css .= '.site-header .jumbotron { background-color: #' . $genesis_body_background . '; }';
   }
 
   if ($css !== '') {

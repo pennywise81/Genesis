@@ -33,27 +33,43 @@
 
         ?>
 
-        <div class="jumbotron jumbotron-fluid" <?php echo ($headerbild !== false) ?
-          ' style="background-image:url(' . $headerbild . ');"' : '' ?>>
-          <div class="container">
-            <h1 class="display-2 site-title">
-              <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                <?php bloginfo('name'); ?>
-              </a>
-            </h1>
+        <div class="jumbotron jumbotron-fluid">
 
-            <?php
+          <?php
 
-            if ($genesis_description || is_customize_preview()) {
-              ?>
-
-              <p class="lead site-description"><?php echo $genesis_description; ?></p>
-
-              <?php
-            }
-
+          if ($headerbild) {
             ?>
 
+            <div class="transition-animation">
+              <img src="<?php echo $headerbild; ?>" class="transition-animation__image">
+            </div>
+
+            <?php
+          }
+
+          ?>
+
+          <div class="site-info">
+            <div class="container">
+              <h1 class="display-2 site-title">
+                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                  <?php bloginfo('name'); ?>
+                </a>
+              </h1>
+
+              <?php
+
+              if ($genesis_description || is_customize_preview()) {
+                ?>
+
+                <p class="lead site-description"><?php echo $genesis_description; ?></p>
+
+                <?php
+              }
+
+              ?>
+
+            </div>
           </div>
         </div>
 

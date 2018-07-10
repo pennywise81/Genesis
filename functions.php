@@ -106,7 +106,7 @@ function genesis_widgets_init() {
     'name' => esc_html__('Footer', 'genesis'),
     'id' => 'genesis-footer-widgets-1',
     'description' => esc_html__('Add widgets here.', 'genesis'),
-    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'before_widget' => '<section id="%1$s" class="col-sm-6 col-md-4 col-lg-3 widget %2$s">',
     'after_widget' => '</section>',
     'before_title' => '<h2 class="widget-title">',
     'after_title' => '</h2>',

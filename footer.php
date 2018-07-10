@@ -15,14 +15,16 @@
 
     <footer class="site-footer">
       <div class="container">
+        <div class="row justify-content-between">
 
-        <?php
+          <?php
 
-        if (is_active_sidebar('genesis-footer-widgets-1')) {
-          dynamic_sidebar('genesis-footer-widgets-1');
-        }
+          if (is_active_sidebar('genesis-footer-widgets-1')) {
+            dynamic_sidebar('genesis-footer-widgets-1');
+          }
 
-        ?>
+          ?>
+        </div>
       </div>
 
       <?php get_template_part('template-parts/partials/footer', 'additional_content'); ?>
