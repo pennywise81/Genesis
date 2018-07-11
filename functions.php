@@ -168,3 +168,8 @@ require get_template_directory() . '/inc/default-widgets.php';
  * Sidebar related stuff
  */
 require get_template_directory() . '/inc/sidebars.php';
+
+/**
+ * Sidebar Customization
+ */
+require get_template_directory() . '/inc/customizer-sidebar.php';
