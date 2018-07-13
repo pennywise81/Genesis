@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="col-sm-9 content-area">
+	<div id="primary" class="col-sm content-area">
 		<main id="main" class="site-main">
 
 		<?php
