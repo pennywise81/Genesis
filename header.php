@@ -80,5 +80,5 @@
 
     <?php get_template_part('template-parts/navbar'); ?>
 
-    <main class="site-content container">
-      <div class="row">
+    <main class="site-content">
+      <?php get_template_part('template-parts/partials/content_wrapper', 'top'); ?>

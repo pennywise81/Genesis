@@ -10,8 +10,7 @@
  */
 
 ?>
-
-      </div>
+      <?php get_template_part('template-parts/partials/content_wrapper', 'bottom'); ?>
     </main><!-- .site-content -->
 
     <footer class="site-footer">
