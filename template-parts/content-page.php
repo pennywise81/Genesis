@@ -44,7 +44,7 @@
         '<span class="edit-link">',
         '</span>',
         null,
-        'btn btn-secondary btn-sm'
+        'btn btn-secondary btn-sm btn-edit-page'
       );
       ?>
     </footer><!-- .entry-footer -->
