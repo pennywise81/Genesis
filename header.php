@@ -31,47 +31,56 @@
         $headerbild = get_header_image();
         $headerbild = function_exists('get_field') ? get_field('headerbild') : $headerbild;
 
+        if (display_header_text() && ($headerbild || $genesis_description)) {
+
         ?>
 
-        <div class="jumbotron jumbotron-fluid">
-
-          <?php
-
-          if ($headerbild) {
-            ?>
-
-            <div class="transition-animation">
-              <img src="<?php echo $headerbild; ?>" class="transition-animation__image">
-            </div>
+          <div class="jumbotron jumbotron-fluid site-graphical-header">
 
             <?php
-          }
 
-          ?>
 
-          <div class="site-info">
-            <div class="container">
-              <h1 class="display-2 site-title">
-                <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-                  <?php bloginfo('name'); ?>
-                </a>
-              </h1>
-
-              <?php
-
-              if ($genesis_description || is_customize_preview()) {
-                ?>
-
-                <p class="lead site-description"><?php echo $genesis_description; ?></p>
-
-                <?php
-              }
-
+            if ($headerbild) {
               ?>
 
+              <div class="transition-animation">
+                <img src="<?php echo $headerbild; ?>" class="transition-animation__image">
+              </div>
+
+              <?php
+            }
+
+            ?>
+
+            <div class="site-info">
+              <div class="container">
+                <h1 class="display-2 site-title">
+                  <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+                    <?php bloginfo('name'); ?>
+                  </a>
+                </h1>
+
+                <?php
+
+                if ($genesis_description || is_customize_preview()) {
+                  ?>
+
+                  <p class="lead site-description"><?php echo $genesis_description; ?></p>
+
+                  <?php
+                }
+
+                ?>
+
+              </div>
             </div>
           </div>
-        </div>
+
+        <?php
+
+        }
+
+        ?>
 
       </div>
 
